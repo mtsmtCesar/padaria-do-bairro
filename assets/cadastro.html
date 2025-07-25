@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastro</title>
+</head>
+<body>
+    <!--Cabeçalho-->
+    <header>
+        <h1>Padaria Terras de Valíria</h1>
+        <img src="/assets/img/pao/paes.jpeg" alt="Pão é vida" width="device-width height="300">
+        <p>Fazemos entrega a domicílio e atendemos pelo Ifood</p>
+        <br/>
+        <br/>
+    </header>
+    
+    <!--Cadastro/Newsletter-->
+    <article>    
+        <h1>Cadastro/Newsletter</h1>
+        <p>* Campos obrigatórios</p>
+
+        <br/>
+    
+        <!--Formulário-->
+        <form>
+            <!--Dados pessoais-->
+            <fieldset>
+                <legend>Dados Pesoais</legend>
+                <label for="nome">Nome completo:*</label>
+                <input type="text" id="nome" name="nome" required>
+
+                <br/>
+                <br/>
+
+                <label for="email">E-mail:*</label>
+                <input type="email" id="email" name="email" required>
+
+                <br/>
+                <br/>
+
+                <label for="telefone">Telefone:*</label>
+                <input type="tel" id="telefone" name="telefone" required pattern="\(\d{2}\)\d{5}-\d{4}" placeholder="(99) 99999-9999">
+
+                <br/>
+                <br/>
+
+                <label for="nascimento">Data de nascimento:</label>
+                <input type="date" id="nascimento" name="nascimento">
+            </fieldset>
+
+            <br/>
+            <br/>
+
+            <!--Endereço-->
+            <fieldset>
+                <legend>Endereço:*</legend>
+                <label for="rua">Rua:</label>
+                <input type="text" id="rua" name="rua" required>
+
+                <label>Número:*</label>
+                <input type="number" id="numero" name="numero" required>
+
+                <br/>
+                <br/>
+
+                <label>Bairro:*</label>
+                <input type="text" id="bairro" name="bairro" required>
+          
+                <br/>
+                <br/>
+          
+                <label for="cep">CEP:*</label>
+                <input type="number" id="cep" name="cep" required pattern="\d{5}-\d{3}"">
+            </fieldset>
+
+            <br/>
+            <br/>   
+
+            <!--Preferências-->
+            <fieldset>
+            <legend>Preferências:</legend>
+            <label for="favoritos">Tipos de produtos favoritos:</label>
+            <br/>
+            <input type="checkbox" id="favoritos" name="favoritos" value="bolos">Bolos
+            <input type="checkbox" id="favoritos2" name="favoritos2" value="doces">Doces
+            <input type="checkbox" id="favoritos3" name="favoritos3" value="sucos">Sucos
+            <input type="checkbox" id="favoritos4" name="favoritos4" value="salgados">Salgados
+            <input type="checkbox" id="favoritos5" name="favoritos5" value="bebidas">Bebidas
+            <input type="checkbox" id="favoritos6" name="favoritos6" value="paes">Pães    
+            </fieldset>
+
+            <br/>
+            <br/>
+
+            <!--Termos-->
+            <fieldset>
+                <legend>Termos</legend>
+                <label for="termos">Aceita receber promoções por e-mail?</label>
+                <input type="checkbox" id="termos" name="termos" required>
+            </fieldset>
+
+            <br/>
+            <br/>
+
+            <!--Botão enviar-->
+            <section>
+            <input type="submit" value="enviar"> 
+            </section>
+ 
+        </form>
+    </article> 
+</body>
+</html>

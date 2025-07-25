@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Pedidos</title>
+    </head>
+    <body>
+        <!--Cabeçalho-->
+        <header>
+            <h1>Padaria Terras de Valíria</h1>
+            <img src="/assets/img/pao/paes.jpeg" alt="Pão é vida" width="device-width height="300">
+            <p>Fazemos entrega a domicílio e atendemos pelo Ifood</p>
+            <br/>
+            <br/>
+        </header>
+        
+        <!--Pedidos especiais-->
+        <article>
+            <h1>Pedidos Especiais</h1>
+            <p>* Campos obrigatórios</p>
+            <br/>
+            <!--Formulário-->
+            <form>
+                <!--Dados do cliente-->
+                <section>
+                <fieldset>
+                    <legend>Dados do Cliente</legend>
+                    <label for="nome">Nome Completo:*</label>
+                    <input type="text" id="nome" name="nome" required>
+
+                    <br>
+                    <br>
+
+                    <label for="telefone">Telefone:*</label>
+                    <input type="tel" id="telefone" name="telefone" required pattern="\(\d{2}\)\s\d{1}\s\d{4}-\d{4}" placeholder="(99) 9 9999-9999">
+
+                    <br>
+                    <br>
+
+                    <label for="email">Email:*</label>
+                    <input type="email" id="email" name="email" required>
+                    </fieldset>
+                </section>
+
+            <br>
+            <br>
+
+                <!--Detalhes do pedido-->
+                <section>
+                <fieldset>
+                <legend>Detalhes do Pedido</legend>
+                <label for="produto">Tipo de produto:</label>
+                <input type="radio" id="produto" name="produto" value="bolo">Bolo
+                <input type="radio" id="produto" name="produto" value="torta">Torta
+                <input type="radio" id="produto" name="produto" value="salgado:"> Salgado
+
+                <br/>
+                <br/>
+
+                <label for="sabor">Sabor/Recheio:</label>
+                <select name="sabor" id="sabor">
+                    <option value="">-- Escolha o sabor --</option>
+                    <option value="chocolate">Chocolate</option>
+                    <option value="morango">Morango</option>
+                    <option value="baunilha">Baunilha</option>
+                    <option value="prestigio">Prestigio</option>
+                    <option value="floresta-negra">Floresta negra</option>
+                </select>
+
+                <br/>
+                <br/>
+
+                <label for="tamanho">Tamanho:</label>
+                <input type="radio" id="tamanho" name="tamanho" value="pequeno">Pequeno
+                <input type="radio" id="tamanho" name="tamanho" value="medio">Médio              
+                <input type="radio" id="tamanho" name="tamanho" value="grande">Grande
+        
+                <br/>
+                <br/>
+
+                <label for="data">Data de entrega:*</label>
+                <input type="date" id="data" name="data" required>
+            </fieldset>
+                </section>
+            
+            <br/>
+            <br/>
+
+                <!--Informações adicionais-->
+                <section>
+                <fieldset>
+                    <legend>Informações Adicionais</legend>
+                    <label for="observacoes">Observações especiais:</label>
+                    <br>
+                    <textarea name="observacoes" id="observacoes" placeholder="Digite suas observações"></textarea>
+                
+                    <br>
+                    <br>
+
+                    <label for="orcamento">Orçamento máximo:</label>
+                    <input type="number" id="orcamento" name="orcamento" placeholder="Em reais (R$)">
+                </fieldset>
+                </section>
+            
+            <br/>
+            <br/>
+            
+                <!--Botão de envio-->
+                <section>
+                    <button type="submit" value="enviar">Enviar</button>
+                </section>
+            </form>        
+        </article>
+
+    </body>
+</html>
+
