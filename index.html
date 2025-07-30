@@ -10,24 +10,30 @@
     <title>Padaria Terras de Valíria</title>
   </head>
   <body>
+
     <!--Cabeçalho-->
-    <header>
+    <header class="cabecalho-principal">
       <h1>Padaria Terras de Valíria</h1>
-      <img src="/assets/img/pao/paes.jpeg" alt="Pão é vida" width="device-width height="300">
-      <p>Fazemos entrega a domicílio e atendemos pelo Ifood</p>
-      
+      <img src="/assets/img/pao/paes.jpeg" alt="Pão é vida" width="200" height="200">
+      <p class="legenda">Fazemos entrega a domicílio e atendemos pelo Ifood</p>
+        
+      <br/>
+
       <!--Navegando pelas páginas-->
-      <nav>
-        <ul>
-          <li><a href="/assets/cadastro.html">Cadastro</a></li>   <!--target="_blank": abre aba ao invés de criar janela--> 
-          <li><a href="/assets/contato.html">Contato</a></li>
-          <li><a href="/assets/feedback.html">Feedback</a></li>
-          <li><a href="/assets/pedidos.html">Pedidos</a></li>
-        </ul>
-      </nav>    
-      <br/>
-      <br/>
-    </header>  
+        <nav class="navegacao">
+          <ul>
+            <li><a href="/index.html">Página principal</a></li> 
+            <li><a href="/assets/cadastro.html">Cadastro</a></li>   <!--target="_blank": abre aba ao invés de criar janela--> 
+            <li><a href="/assets/contato.html">Contato</a></li>
+            <li><a href="/assets/feedback.html">Feedback</a></li>
+            <li><a href="/assets/pedidos.html">Pedidos</a></li>
+          </ul>
+        </nav>    
+        <br/>
+      </header>        
+    
+    <br/>
+    <br/>  
 
     <!--Navegação pela página-->
     <nav>
@@ -45,26 +51,34 @@
     <main>
         <!--Quem somos-->
       <article>
-        <h2 id="quem-somos">Quem somos:</h2>
+        <h2 id="quem-somos" class="titulo-principal">Quem somos:</h2>
+        <br/>
         <!--Nossa missão-->
         <section>
-          <h3>Nossa missão:</h3>
+          <h3 class="titulo-secundario">Nossa missão:</h3>
           <p>Tradição e satisfazendo o paladar das pessoas desde 1980.</p>
+        <br/>
         </section>
         <!--Nossa visão-->
         <section>
-          <h3> Nossa visão:</h3>
+          <h3 class="titulo-secundario"> Nossa visão:</h3>
           <p>Levar e continuar a cultura da panificação ao paladar dos brasileiros</p>
         </section>
+        <br/>
         <!--Nosso diferencial-->
         <section>
-          <h3>Diferenciais:</h3>
+          <h3 class="titulo-secundario">Diferenciais:</h3>
           <p>Nossas massas são feitas com fermentação natural e a qualidade garantida de mais de 100 anos de suceesso.</p>
           <p>Oferecemos serviços para aqueles que não tem tempo de cuidar de sua alimentação.</p>
         </section>
+
+        <br>
+        <br>
+
         <!--Vídeo institucional-->
         <section>
-          <h3>Video Institucional</h3>
+          <h3 class="titulo-principal">Video Institucional</h3>
+          <br>
           <video controls width="720">
             <source src="/assets/video/video-institucional-padaria.mp4" type="video/mp4">
             <p>Seu navegador não suporta vídeos</p>
@@ -77,17 +91,18 @@
       
       <!--Nossos produtos-->
       <article>
-        <h2 id="nossos-produtos">Nossos produtos:</h2>
+        <h2 id="nossos-produtos" class="titulo-principal">Nossos produtos:</h2>
+          <br/>
           <ul>
-            <h4>Pães</h4>
+            <h4 class="titulo-secundario">Pães</h4>
             <ol>
               <li>Pão Francês</li>
               <li>Pão de leite</li>
               <li>Pão de torresmo</li>
               <li>Pão de ervas finas</li>
             </ol>
-
-            <li><h4>Doces</h4></li>
+            <br/>
+            <li><h4 class="titulo-secundario">Doces</h4></li>
               <ol>
                 <li>Bolos de diversos sabores</li>
                 <li>Sonhos</li>
@@ -95,8 +110,8 @@
                 <li>Doces amanteigados</li>
                 <li>Pavês</li>
               </ol>
-
-            <li><h4>Bebidas quentes</h4></li>
+            <br/>  
+            <li><h4 class="titulo-secundario">Bebidas quentes</h4></li>
               <ol>
                 <li>Café</li>
                 <li>Leite</li>
@@ -104,8 +119,8 @@
                 <li>Cappuccino</li>
                 <li>Quentão</li>
               </ol>
-
-            <li><h4>Sucos</h4></li>
+            <br/>  
+            <li><h4 class="titulo-secundario">Sucos</h4></li>
               <ol>
                 <li>Laranja</li>
                 <li>Limão</li>
@@ -113,8 +128,8 @@
                 <li>Acerola</li>
                 <li>Vitaminas de diversos sabores</li>
               </ol>
-
-            <li><h4>Salgados</h4></li>
+            <br/>  
+            <li><h4 class="titulo-secundario">Salgados</h4></li>
               <ol>
                 <li>Pão de queijo</li>
                 <li>Coxinha</li>
@@ -130,10 +145,12 @@
 
       <!--Cardápio-->
       <article>
-        <h2 id="cardapio">Cardápio:</h2>
-          <time datetime="21/07/2025">Atualizado em 21/07/2025</time>
+        <h2 id="cardapio" class="titulo-principal">Cardápio:</h2>
+          <br/>
+          <time datetime="21/07/2025" class="legenda">Atualizado em 21/07/2025</time>
+            <br/>
             <table border="3">
-              <thead>
+              <thead class="titulo-secundario">
                 <tr>
                   <th>Categoria</th>
                   <th>Produto</th>
@@ -326,7 +343,7 @@
 
     <!-- Localização e horários -->
     <article>
-      <h2 id="localização-e-horários">Localização e horários:</h2>
+      <h2 id="localização-e-horários" class="titulo-principal">Localização e horários:</h2>
         <!--Endereço-->
         <section>
           <ul>  
@@ -378,16 +395,19 @@
    <!--Curiosidade-->
     <aside>
     <section> 
-      <h2 id=curiosidade>O que é fermento natural e qual sua vantagem sobre o industrializado</h2>
+      <h2 id=curiosidade class="titulo-principal">O que é fermento natural e qual sua vantagem sobre o industrializado</h2>
       <p><i>Quando você começa a fazer pão caseiro, em algum momento vai se deparar com o fermento natural. Conheça o poder dessas incríveis leveduras selvagens.</i></p>
       <p>O fermento natural é conhecido por diversos nomes: levain (fermento em francês, se pronuncia “levãn”), sourdough starter (inglês), lievito naturale ou pasta madre (italiano), masa madre (espanhol), massa lêveda (Portugal) ou massa azeda. Um pão com esse fermento leva mais tempo para ser feito, possui um aspecto rústico, uma casca crocante, um miolo cheio de alvéolos irregulares e um sabor levemente azedo e incomparável.</p>
       <img src="/assets/img/pao/fermento-natural.jpg" alt="Fermento natural" width="device-width" height="300">
       <p>Já falamos aqui sobre a levedura Saccharomyces cerevisiae e os tipos de fermentos biológicos industrializados. Pois o fermento natural é a mesma levedura em seu estado selvagem, combinado com lactobacilos que mantêm a acidez e evitam que outras bactérias indesejadas se desenvolvam.</p>
-      <h2>Origem do fermento natural</h2>
+      <br/>
+      <h2 class="titulo-principal">Origem do fermento natural</h2>
       <p>A fermentação natural está longe de ser uma novidade, é um processo utilizado desde a produção dos primeiros pães. O registro mais antigo é de 3.700 AC, mas sua origem provavelmente está relacionada com o início da agricultura. Foi somente nos últimos 150 anos que o fermento industrializado foi desenvolvido e logo passou a ser amplamente empregado na produção de pães.</p>
-      <h2>Como fazer o fermento natural</h2>
+      <br/>
+      <h2 class="titulo-principal">Como fazer o fermento natural</h2>
       <p>Para produzir o fermento natural temos que misturar farinha de trigo com água e deixar a natureza fazer seu trabalho de reprodução dos microrganismos. Devemos adicionar farinha e água diariamente durante 7 a 10 dias. Alguns métodos utilizam frutas (abacaxi, maçã ou uva), iogurte ou mel para potencializar a fermentação</p>
-      <h2>Benefícios do pão com fermento natural</h2>
+      <br/>
+      <h2 class="titulo-principal">Benefícios do pão com fermento natural</h2>
       <p>Caso você ainda não esteja convencido de se aventurar nesse mundo, aqui vão algumas vantagens do pão com fermento natural:</p>
       <ul>
         <li>Seu sabor é incomparável ao do pão tradicional;</li>
@@ -399,15 +419,16 @@
       </ul>
       &copy Retirado do site www.amopaocaseiro.com.br
     </section>
+    <br/>
     <section>
-      <h2>Como fazer fermentação natural</h2>
+      <h2 class="titulo-principal">Como fazer fermentação natural</h2>
       <iframe width="600" height="350" src="https://www.youtube.com/embed/AAAgZzZIZCA" title="Como fazer fermento natural (ou levain, sourdough starter) | Padeiro de Apartamento" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>    </section>
       <br/>
       <br/>
     </aside>
 
     <!--Rodapé-->
-    <footer>
+    <footer class="rodape">
       <p>&copy;Todos os direitos reservados a Cesar Itiro Matsumoto </p>
       <p>Razão Social: Terras de Valíria. CNPJ: 11.111.111/0001-00</p>
       <p>Contato: (11) 99999-9999</p>

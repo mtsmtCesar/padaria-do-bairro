@@ -3,17 +3,32 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/assets/css/style.css"> <!--Liga a css-->  
+
     <title>Cadastro</title>
 </head>
 <body>
     <!--Cabeçalho-->
-    <header>
+    <header class="cabecalho-principal">
         <h1>Padaria Terras de Valíria</h1>
-        <img src="/assets/img/pao/paes.jpeg" alt="Pão é vida" width="device-width height="300">
-        <p>Fazemos entrega a domicílio e atendemos pelo Ifood</p>
+        <img src="/assets/img/pao/paes.jpeg" alt="Pão é vida" width="200" height="200">
+        <p class="legenda">Fazemos entrega a domicílio e atendemos pelo Ifood</p>
         <br/>
+        <!--Navegando pelas páginas-->
+        <nav class="navegacao">
+                <ul>
+                    <li><a href="/index.html">Página principal</a></li> 
+                    <li><a href="/assets/cadastro.html">Cadastro</a></li>   <!--target="_blank": abre aba ao invés de criar janela--> 
+                    <li><a href="/assets/contato.html">Contato</a></li>
+                    <li><a href="/assets/feedback.html">Feedback</a></li>
+                    <li><a href="/assets/pedidos.html">Pedidos</a></li>
+                </ul>
+        </nav>    
         <br/>
     </header>
+        
+    <br/>
+    <br/>
     
     <!--Cadastro/Newsletter-->
     <article>    
@@ -26,9 +41,9 @@
         <form>
             <!--Dados pessoais-->
             <fieldset>
-                <legend>Dados Pesoais</legend>
+                <legend>Dados Pessoais</legend>
                 <label for="nome">Nome completo:*</label>
-                <input type="text" id="nome" name="nome" required>
+                <input type="text" id="nome" name="nome" required placeholder="Como quer ser chamado?">
 
                 <br/>
                 <br/>
@@ -103,12 +118,27 @@
             <br/>
             <br/>
 
-            <!--Botão enviar-->
+            <!--Botão-->
             <section>
-            <input type="submit" value="enviar"> 
+            <input type="submit" value="&#128077 enviar" class="btn btn-submit"> 
+            <input type="button" value="&#128075 limpar" class="btn btn-limpar"> 
+   
             </section>
  
+
         </form>
     </article> 
+
+    <br>
+    <br>
+    
+    <!--Rodapé-->
+    <footer class="rodape">
+        <p>&copy;Todos os direitos reservados a Cesar Itiro Matsumoto </p>
+        <p>Razão Social: Terras de Valíria. CNPJ: 11.111.111/0001-00</p>
+        <p>Contato: (11) 99999-9999</p>
+      
+    </footer>
+    
 </body>
 </html>

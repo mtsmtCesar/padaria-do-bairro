@@ -1,0 +1,150 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+
+body { 
+    font-family: "Playfair Display", serif;
+    color: #552814;
+    background-color: #F5EDE3;
+    font-weight: 600;
+}
+
+h2 {
+    font-size: 25;
+    font-family: "Playfair Display", serif;
+    background-color: #552814;
+    color: #F5EDE3;
+    text-align: center;
+}
+
+footer {
+    font-size: 5;
+    font-family: 'Times New Roman', Times, serif;
+    color: #F5EDE3;
+    font-style: italic;
+}
+
+.cabecalho-principal {
+    font-size: 25;
+    font-family: "Playfair Displa", serif;
+    background-color: #552814;
+    color: #F5EDE3;
+    text-align: center;
+    
+}
+
+.cabecalho-principal a {
+    font-size: 20;
+    font-family: Playfair Display, serif;
+    background-color: #552814;
+    color: #F5EDE3;
+    text-decoration: none;
+    text-align: center;
+}
+
+nav a {
+    font-size: 20;
+    font-family: Playfair Display, serif;
+    text-decoration: none;
+    color:#552814;
+}
+
+a:hover{
+    color:#918885;
+}
+
+.legenda{
+    font-size: 10;
+    font-family: Playfair Display, serif;
+    text-align: center;
+}
+
+.titulo-principal {
+    font-size: 30;
+    font-family: Playfair Display, serif;
+    background-color: #BB793E;
+}
+
+.titulo-secundario {
+    font-size: 27
+    font-family: Playfair Display, serif;
+    font-weight: bold;
+    background-color: #552814;
+    color: #F5EDE3;
+}
+
+.navegacao {
+    font-size: 24;
+    font-family: Playfair Display, serif;
+    background-color: #552814;
+    color: #f5ed00;
+}
+
+
+.rodape {
+    font-size: 5
+    font-family: Playfair Display, serif;
+    background-color: #552814;
+    color: #F5EDE3;
+}
+
+
+<!--Formulário-->
+legend { 
+    font-size: 30;
+    font-weight: bolder;
+}
+
+input[type="text"] {
+    border-left: 5px solid #ccc;
+  
+}
+    
+input[type="date"] {
+    background-color: #f29f64;
+}
+
+input[type="select"] {
+    background-color: #f29f64;
+}
+    
+input:focus {
+    border-color: #874c04;
+    box-shadow: 0 0 8px rgba(255, 140, 0, 0.5);
+}
+
+
+input:hover {
+    background-color: #f1c7ab;
+}
+
+form{ 
+    margin: 10px;
+}
+
+.btn {
+    background-color: #552814;
+    color: #F5EDE3;
+    }
+
+.btn:hover {
+    background-color: #f29f64;
+    cursor: pointer;
+}
+
+.btn:active {
+    background-color: #585655;
+}
+
+
+
+.btn-submit {
+    font-weight: bold;
+}
+
+.btn-limpar {
+    font-weight: 300;
+}
+
