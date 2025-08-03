@@ -1,35 +1,40 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-    <head>
+<head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="stylesheet" href="/assets/css/style.css">
+        
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Lobster&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Playfair:ital,opsz,wght@0,5..1200,300..900;1,5..1200,300..900&display=swap" rel="stylesheet">
+                
         <title>Pedidos</title>
-    </head>
+</head>
     <body>
         <header class="cabecalho-principal">
-            <h1>Padaria Terras de Valíria</h1>
-            <img src="/assets/img/pao/paes.jpeg" alt="Pão é vida" width="200" height="200">
-            <p class="legenda">Fazemos entrega a domicílio e atendemos pelo Ifood</p>
+            <p>Padaria Terras de Valíria</p>
+            <img src="/assets/img/pao/paes.jpeg" class="logo" alt="Pão é vida" width="75" height="75">
               
             <br/>
       
-            <!--Navegando pelas páginas-->
-            <nav class="navegacao">
-                    <ul>
-                        <li><a href="/index.html">Página principal</a></li> 
-                        <li><a href="/assets/cadastro.html">Cadastro</a></li>   <!--target="_blank": abre aba ao invés de criar janela--> 
-                        <li><a href="/assets/contato.html">Contato</a></li>
-                        <li><a href="/assets/feedback.html">Feedback</a></li>
-                        <li><a href="/assets/pedidos.html">Pedidos</a></li>
-                    </ul>
-            </nav>    
-            <br/>
+      <!--Navegando pelas páginas-->
+      <nav>
+        <ul>
+          <li class="lista-flex"><a href="/index.html">Página principal</a></li> 
+          <li class="lista-flex"><a href="/assets/cadastro.html">Cadastro</a></li>   <!--target="_blank": abre aba ao invés de criar janela--> 
+          <li class="lista-flex"><a href="/assets/contato.html">Contato</a></li>
+          <li class="lista-flex"><a href="/assets/feedback.html">Feedback</a></li>
+          <li class="lista-flex"><a href="/assets/pedidos.html">Pedidos</a></li>
+        </ul>
+      </nav>    
+      <br/>
         </header>
 
         <br/>
         <br/>
         
+        <main>
         <!--Pedidos especiais-->
         <article>
             <h1>Pedidos Especiais</h1>
@@ -122,25 +127,27 @@
             <br/>
             
                 <!--Botão de envio-->
-            <!--Botão-->
-            <section>
-                <input type="submit" value="&#128077 enviar" class="btn btn-submit"> 
-                <input type="button" value="&#128075 limpar" class="btn btn-limpar"> 
+                
+                <section>
+                    <input type="submit" value="&#128077 enviar" class="btn btn-submit"> 
+                    <input type="button" value="&#128075 limpar" class="btn btn-limpar"> 
        
-            </section>
-        </form>        
-    </article>
+                </section>
+            </form>        
+        </article>
 
-            <br/>
-            <br/>
+        </main>
+            
+        <br/>
+        <br/>
 
             <!--Rodapé-->
-            <footer class="rodape">
-                <p>&copy;Todos os direitos reservados a Cesar Itiro Matsumoto </p>
-                <p>Razão Social: Terras de Valíria. CNPJ: 11.111.111/0001-00</p>
-                <p>Contato: (11) 99999-9999</p>
+        <footer class="rodape">
+            <p>&copy;Todos os direitos reservados a Cesar Itiro Matsumoto </p>
+            <p>Razão Social: Terras de Valíria. CNPJ: 11.111.111/0001-00</p>
+            <p>Contato: (11) 99999-9999</p>
   
-            </footer>
+        </footer>
       
     </body>
 </html>

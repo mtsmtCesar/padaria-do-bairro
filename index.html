@@ -1,51 +1,74 @@
 <!DOCTYPE>
 <html lang="pt-br">
-  <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Padaria Terras de Valíria.">
-    <meta name="keywords" content="pão, suco, caseiro, comida, janta, almoço, café, natural">
-    <meta name="robots" contents="index, follow">
-    <link rel="stylesheet" href="/assets/css/style.css"> <!--Liga a css-->  
-    <title>Padaria Terras de Valíria</title>
-  </head>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Padaria Terras de Valíria.">
+  <meta name="keywords" content="pão, suco, caseiro, comida, janta, almoço, café, natural">
+  <meta name="robots" contents="index, follow">
+   <link rel="stylesheet" href="/assets/css/style.css"> <!--Liga a css-->  
+    
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Lobster&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Playfair:ital,opsz,wght@0,5..1200,300..900;1,5..1200,300..900&display=swap" rel="stylesheet">
+    
+  <title>Padaria Terras de Valíria</title>
+</head>
+  
   <body>
 
     <!--Cabeçalho-->
     <header class="cabecalho-principal">
-      <h1>Padaria Terras de Valíria</h1>
-      <img src="/assets/img/pao/paes.jpeg" alt="Pão é vida" width="200" height="200">
-      <p class="legenda">Fazemos entrega a domicílio e atendemos pelo Ifood</p>
-        
+      <div class="nome-logo">
+      <p>Padaria Terras de Valíria</p>
+      <img src="/assets/img/pao/paes.jpeg" class="logo" alt="Pão é vida" width="75" height="75">
+      </div>
+
       <br/>
 
       <!--Navegando pelas páginas-->
-        <nav class="navegacao">
+        <nav>
           <ul>
-            <li><a href="/index.html">Página principal</a></li> 
-            <li><a href="/assets/cadastro.html">Cadastro</a></li>   <!--target="_blank": abre aba ao invés de criar janela--> 
-            <li><a href="/assets/contato.html">Contato</a></li>
-            <li><a href="/assets/feedback.html">Feedback</a></li>
-            <li><a href="/assets/pedidos.html">Pedidos</a></li>
+            <div class="navegacao-site"></div>
+            <li class="lista-flex"><a href="/index.html">Página principal</a></li> 
+            <li class="lista-flex" ><a href="/assets/cadastro.html">Cadastro</a></li>   <!--target="_blank": abre aba ao invés de criar janela--> 
+            <li class="lista-flex"><a href="/assets/contato.html">Contato</a></li>
+            <li class="lista-flex"><a href="/assets/feedback.html">Feedback</a></li>
+            <li class="lista-flex"><a href="/assets/pedidos.html">Pedidos</a></li>
+            </div>
           </ul>
         </nav>    
         <br/>
-      </header>        
+    </header>        
     
     <br/>
-    <br/>  
-
-    <!--Navegação pela página-->
-    <nav>
-      <h2>Navegação:</h2>
-      <a href="#quem-somos"><p>Quem somos</p></a>
-      <a href="#nossos-produtos"><p></p>Nossos produtos</p></a>
-      <a href="#cardapio"><p>Cardápio</p></a>
-      <a href="#localização-e-horários"><p>Localização e horários</p></a>
-      <a href="#curiosidade"><p>Curiosidade</p></a>
-      <br/>
     <br/>
+
+    <div class="container-nav">
+    <!--Navegação pela página-->
+    <nav class="nav-dx">
+      <h2>Navegação:</h2>
+      <ul>
+        <li><a href="#quem-somos">Quem somos</a></li>
+        <li><a href="#nossos-produtos" >Nossos produtos</a></li>
+        <li><a href="/assets/cardapio.html" >Cardápio</a></li>
+        <li><a href="#localização-e-horários">Localização e horários</a></li>
+        <li><a href="#curiosidade">Curiosidade</a></li>
+      </ul>
     </nav>
+
+    <!--Vídeo institucional-->
+    <section>
+      <video width=430 height=320 controls width="720" class="video-institucional">
+        <source src="/assets/video/video-institucional-padaria.mp4" type="video/mp4">
+        <p>Seu navegador não suporta vídeos</p>
+        </video>
+      </video>
+    </section>
+    </div>
+    
+    <br/>
+    <br/>
 
     <!-- Conteúdo principal -->
     <main>
@@ -75,21 +98,10 @@
         <br>
         <br>
 
-        <!--Vídeo institucional-->
-        <section>
-          <h3 class="titulo-principal">Video Institucional</h3>
-          <br>
-          <video controls width="720">
-            <source src="/assets/video/video-institucional-padaria.mp4" type="video/mp4">
-            <p>Seu navegador não suporta vídeos</p>
-            </video>
-          </video>
-        </section>
-      <br/>
-      <br/>
+
       </article>
       
-      <!--Nossos produtos-->
+      <!--Nossos produtos principais-->
       <article>
         <h2 id="nossos-produtos" class="titulo-principal">Nossos produtos:</h2>
           <br/>
@@ -143,292 +155,149 @@
       <br/>
       </article>
 
-      <!--Cardápio-->
+      <div class="container">
+        <img src="/assets/img/pao/paes.jpeg" class="logo" alt="Logo da padaria" width="75"  height="75">
+        <strong>Nossos produtos principais</strong>
+        <img src="/assets/img/pao/paes.jpeg" class="logo" alt="Logo da padaria" width="75"  height="75">
+        
+        <div class="container-produtos-promocao">
+          <!--Produto 1-->
+          <div class="produto">  
+            <img src="/assets/img/pao/pao-frances.jpg" alt="Pão francês">
+            <div class="descricao-produto">
+              <strong>Pão Francês</strong>
+              <p>Massa quentinha e crocante.</p>
+            </div>
+          </div>
+          <!--Produto 2-->
+          <div class="produto">  
+            <img src="/assets/img/pao/pao-frances.jpg" alt="Pão francês">
+            <div class="descricao-produto">
+              <strong>Pão Francês</strong>
+              <p>Massa quentinha e crocante.</p>
+            </div>
+          </div>
+          <!--Produto 3-->
+          <div class="produto">  
+            <img src="/assets/img/pao/pao-frances.jpg" alt="Pão francês">
+            <div class="descricao-produto">
+              <strong>Pão Francês</strong>
+              <p>Massa quentinha e crocante.</p>
+            </div>
+          </div>
+          <!--Produto 4-->
+          <div class="produto">  
+            <img src="/assets/img/pao/pao-frances.jpg" alt="Pão francês">
+            <div class="descricao-produto">
+              <strong>Pão Francês</strong>
+              Massa quentinha e crocante.
+            </div>
+          </div>
+
+        </div>
+      </div>
+
+      <br/>
+      <br/>
+
+      <!-- Localização e horários -->
       <article>
-        <h2 id="cardapio" class="titulo-principal">Cardápio:</h2>
-          <br/>
-          <time datetime="21/07/2025" class="legenda">Atualizado em 21/07/2025</time>
-            <br/>
-            <table border="3">
-              <thead class="titulo-secundario">
+        <h2 id="localização-e-horários" class="titulo-principal">Localização e horários:</h2>
+          <br/>  
+          <!--Endereço-->
+          <section>
+            <ul>  
+              <li><address>Estamos na Rua dos Dragões, 666 - Bairro Terra dos Homens Livres, São Paulo - SP. 12345-123</address></li>
+            </ul>
+          </section>  
+        
+          <br/>  
+
+        <!--Horários-->
+          <section>
+            <table border="1">
+              <thead>
                 <tr>
-                  <th>Categoria</th>
-                  <th>Produto</th>
-                  <th>Descrição</th>
-                  <th>Preço</th>
-                  <th>Imagem</th>
+                  <th>Dias</th>
+                  <th>Horários</th>
                 </tr>
               </thead>
               <tbody>
-                <!--Pães-->
-                <section>
                 <tr>
-                  <td>Pão</td>
-                  <td>Pão Francês</td>
-                  <td>Pão crocante e quentinho do jeito que o paulistano gosta</td>
-                  <td>R$ 0,84 unid.</td>
-                  <td><img src="/assets/img/pao/pao-frances.jpg" alt="foto de pão" width="100" height="70"></td>
+                  <td>Segunda a Sexta feiras</td>
+                  <td>5 - 22 hrs</td>
                 </tr>
                 <tr>
-                  <td>Pão</td>
-                  <td>Pão de leite</td>
-                  <td>Também conhecido como pão de banha, macio demais</td>
-                  <td>R$ 1,00 unid.</td>
-                  <td><img src="/assets/img/pao/pao-leite.jpg" alt="foto de pão de leite" width="100" height="70"></td>
-                 </tr>
-                <tr>
-                  <td>Pão</td>
-                  <td>Pão de Torresmo</td>
-                  <td>Pão de torresmo é baum demais!!!!!!!!!</td>
-                  <td>R$ 2,00 unid.</td>
-                  <td><img src="/assets/img/pao/pao-torresmo.jpg" alt="foto de pão de torresmo" width="100" height="70"></td>
+                  <td>Sábado</td>
+                  <td>8 - 22 hrs</td>
                 </tr>
                 <tr>
-                  <td>Pão</td>
-                  <td>Pão de ervas finas</td>
-                  <td>Pão para quem tem gosto refinado</td>
-                  <td>R$ 1,50 unid.</td>
-                  <td><img src="/assets/img/pao/ervas-finas.jpg" alt="foto de pão de ervas finas" width="100" height="70"></td>
-                </tr>
-                </section>
-                <!--Doces-->
-                <section>
-                <tr>
-                  <td>Doce</td>
-                  <td>Bolos de diversos sabores</td>
-                  <td>Sabores: Laranja, cenoura com cobertura de chocolate, baunilha, côco, morango</td>
-                  <td>R$ 20,00 unid.</td>
-                  <td><img src="/assets/img/doce/bolo.jpg" alt="foto de bolo de laranja" width="100" height="70"></td>
+                  <td>Domingo e feriados</td>
+                  <td>8 - 22 hrs</td>
                 </tr>
                 <tr>
-                  <td>Doce</td>
-                  <td>Sonhos</td>
-                  <td>Com recheio de creme de baunilha e coberto de açucar</td>
-                  <td>R$ 5,00 unid.</td>
-                  <td><img src="/assets/img/doce/sonho.jpg" alt="foto de sonho" width="100" height="70"></td>                </tr>
-                <tr>
-                  <td>Doce</td>
-                  <td>Brigadeiro</td>
-                  <td>Sabor e chocolate, beijinho, com recheio de avelã</td>
-                  <td>R$ 1,00 unid.</td>
-                  <td><img src="/assets/img/doce/brigadeiro.jpg" alt="foto de brigadeiro" width="100" height="70"></td>                </td>
-                <tr>
-                  <td>Doce</td>
-                  <td>Biscoito amanteigados</td>
-                  <td>Diversos: Juju, amanteigado, etc</td>
-                  <td>R$ 0,20 unid.</td>
-                  <td><img src="/assets/img/doce/amanteigado.jpg" alt="foto de biscoito amateigado" width="100" height="70"></td>                </tr>
-                <tr>
-                  <td>Doce</td>
-                  <td>Pavê</td>
-                  <td>É pavê ou pacumê</td>
-                  <td>R$ 5,00 pedaço</td>
-                  <td><img src="/assets/img/doce/pave.jpg" alt="foto de pavê" width="100" height="70"></td>                </tr>
-                </section>
-                <!--Bebidas quentes-->
-                <section>
-                <tr>
-                  <td>Bebidas quentes</td>
-                  <td>Café</td>
-                  <td>Coado em meia usada de atleta</td>
-                  <td>R$ 3,00 unid.</td>
-                  <td><img src="/assets/img/bebida-quente/cafe.jpg" alt="foto de café" width="100" height="70"></td>
+                  <td>Oferecemos almoço todos os dias</td>
+                  <td>11 - 16 hrs</td>
                 </tr>
                 <tr>
-                  <td>Bebidas quentes</td>
-                  <td>Leite</td>
-                  <td>Nenhuma vaca foi machucada</td>
-                  <td>R$ 3,00 copo.</td>
-                  <td><img src="/assets/img/bebida-quente/leite.jpg" alt="foto de copo de leite" width="100" height="70"></td>                </tr>
-                <tr>
-                  <td>Bebidas quentes</td>
-                  <td>Chá</td>
-                  <td>Sabores: mate, hortelã, maçã, pêssego, limão, etc</td>
-                  <td>R$ 4,00 copo.</td>
-                  <td><img src="/assets/img/bebida-quente/cha.jpg" alt="foto de chá" width="100" height="70"></td>   </tr>
-                <tr>
-                  <td>Bebidas quentes</td>
-                  <td>Cappuccino</td>
-                  <td>Café, leite e achocolatado porque chocolate está muito caro</td>
-                  <td>R$ 5,00 copo.</td>
-                  <td><img src="/assets/img/bebida-quente/cappuccino.jpg" alt="foto de cappuccino" width="100" height="70"></td></tr>
-                <tr>
-                  <td>Bebidas quentes</td>
-                  <td>Quentão</td>
-                  <td>Se beber não dirija</td>
-                  <td>R$ 2,00 copo.</td>
-                  <td><img src="/assets/img/bebida-quente/quentao.jpg" alt="foto de quentão width="100" height="70"></td></tr>
-                </section>
-                <!--Sucos-->
-                <section>
-                <tr>
-                  <td>Sucos</td>
-                  <td>Laranja</td>
-                  <td>A laranja veio primeiro que a cor laranja</td>
-                  <td>R$ 13,00 unid.</td>
-                  <td><img src="/assets/img/suco/laranja.jpg" alt="suco de laranja" width="100" height="70"></td>
+                  <td>Oferecemos jantar todos os dias</td>
+                  <td>19 - 22 hrs</td>
                 </tr>
                 <tr>
-                  <td>Sucos</td>
-                  <td>Limão</td>
-                  <td>Tem vitamina C</td>
-                  <td>R$ 13,00 unid.</td>
-                  <td><img src="/assets/img/suco/limao.jpg" alt="suco de limão" width="100" height="70"></td>
+                  <td>Entregas a domicílio ou aplicativo</td>
+                  <td>10 - 22 hrs</td>
                 </tr>
-                <tr>
-                  <td>Sucos</td>
-                  <td>Maracujá</td>
-                  <td>Acalma os nervos</td>
-                  <td>R$ 13,00 unid.</td>
-                  <td><img src="/assets/img/suco/maracuja.jpg" alt="suco de maracujá" width="100" height="70"></td>
-                </tr>
-                <tr>
-                  <td>Sucos</td>
-                  <td>Acerola</td>
-                  <td>Tem mais vitamina C que o limão</td>
-                  <td>R$ 13,00 unid.</td>
-                  <td><img src="/assets/img/suco/acerola.jpg" alt="suco de acerola" width="100" height="70"></td>
-                </tr>
-                <tr>
-                  <td>Sucos</td>
-                  <td>Vitaminas de diversos sabores</td>
-                  <td>Com leite, hotelã ou gengibre e feito com a polpa da fruta</td>
-                  <td>R$ 20,00 unid.</td>
-                  <td><img src="/assets/img/suco/vitamina.jpg" alt="vitamina" width="100" height="70"></td>
-                </tr>
-                </section>
-                <!--Salgados-->
-                <section>
-                <tr>
-                  <td>Salgados</td>
-                  <td>Coxinha</td>
-                  <td>Melhor que do Ragazzo</td>
-                  <td>R$ 5,00 unid.</td>
-                  <td><img src="/assets/img/salgado/coxinha.jpg" alt="foto de coxinha" width="100" height="70"></td>
-                </tr>
-                <tr>
-                  <td>Salgados</td>
-                  <td>Pão de queijo</td>
-                  <td>Mineiro ama e nós também</td>
-                  <td>R$ 3,00 unid.</td>
-                  <td><img src="/assets/img/salgado/pao-de-queijo.jpg" alt="foto de pão de queijo" width="100" height="70"></td>
-                </tr>
-                <tr>
-                  <td>Salgados</td>
-                  <td>Enroladinho</td>
-                  <td>Também chamado de joelho</td>
-                  <td>R$ 5,00 unid.</td>
-                  <td><img src="/assets/img/salgado/enroladinho.jpg" alt="foto de enroladinho" width="100" height="70"></td>
-                </tr>
-                <tr>
-                  <td>Salgados</td>
-                  <td>Pastel</td>
-                  <td>Igualzinho do feira, mas mais barato</td>
-                  <td>R$ 8,00 unid.</td>
-                  <td><img src="/assets/img/salgado/pastel.jpg" alt="foto de pastel" width="100" height="70"></td>
-                </tr>
-                <tr>
-                  <td>Salgados</td>
-                  <td>Esfiha</td>
-                  <td>Melhor que do Habbibs</td>
-                  <td>R$ 3,00 unid.</td>
-                  <td><img src="/assets/img/salgado/esfiha.jpg" alt="foto de esfiha" width="100" height="70"></td>
-                </tr>
-                </section>
               </tbody>
             </table>
-          <br/>
-          <br/>          
-      </article>
+          
+            <br/>
 
-    <!-- Localização e horários -->
-    <article>
-      <h2 id="localização-e-horários" class="titulo-principal">Localização e horários:</h2>
-        <!--Endereço-->
-        <section>
-          <ul>  
-            <li><address>Estamos na Rua dos Dragões, 666 - Bairro Terra dos Homens Livres, São Paulo - SP. 12345-123</address></li>
-          </ul>
-        </section>  
-        <!--Horários-->
-        <section>
-          <table border="1">
-            <thead>
-              <tr>
-                <th>Dias</th>
-                <th>Horários</th>
-              </tr>
-            </thead>
-            <tbody>
-              <tr>
-                <td>Segunda-Sexta</td>
-                <td>5 - 22 hrs</td>
-              </tr>
-              <tr>
-                <td>Sábado</td>
-                <td>8 - 22 hrs</td>
-              </tr>
-              <tr>
-                <td>Domingo e feriados</td>
-                <td>8 - 22 hrs</td>
-              </tr>
-              <tr>
-                <td>Oferecemos almoço todos os dias</td>
-                <td>11 - 16 hrs</td>
-              </tr>
-              <tr>
-                <td>Oferecemos jantar todos os dias</td>
-                <td>19 - 22 hrs</td>
-              </tr>
-              <tr>
-                <td>Entregas a domicílio ou aplicativo</td>
-                <td>10 - 22 hrs</td>
-              </tr>
-            </tbody>
-          </table>
-        </section>
-      <br/>
-      <br/>
-    </article>
-    </main>    
-  
+            <p>Fazemos entrega a domicílio e atendemos pelo Ifood</p>
+          </section>
+      </article>  
+        
+        <br/>
+        <br/>
+    
    <!--Curiosidade-->
-    <aside>
-    <section> 
-      <h2 id=curiosidade class="titulo-principal">O que é fermento natural e qual sua vantagem sobre o industrializado</h2>
-      <p><i>Quando você começa a fazer pão caseiro, em algum momento vai se deparar com o fermento natural. Conheça o poder dessas incríveis leveduras selvagens.</i></p>
-      <p>O fermento natural é conhecido por diversos nomes: levain (fermento em francês, se pronuncia “levãn”), sourdough starter (inglês), lievito naturale ou pasta madre (italiano), masa madre (espanhol), massa lêveda (Portugal) ou massa azeda. Um pão com esse fermento leva mais tempo para ser feito, possui um aspecto rústico, uma casca crocante, um miolo cheio de alvéolos irregulares e um sabor levemente azedo e incomparável.</p>
-      <img src="/assets/img/pao/fermento-natural.jpg" alt="Fermento natural" width="device-width" height="300">
-      <p>Já falamos aqui sobre a levedura Saccharomyces cerevisiae e os tipos de fermentos biológicos industrializados. Pois o fermento natural é a mesma levedura em seu estado selvagem, combinado com lactobacilos que mantêm a acidez e evitam que outras bactérias indesejadas se desenvolvam.</p>
+      <article>
+        <section> 
+        <h2 id=curiosidade class="titulo-principal">O que é fermento natural e qual sua vantagem sobre o industrializado</h2>
+        <p><i>Quando você começa a fazer pão caseiro, em algum momento vai se deparar com o fermento natural. Conheça o poder dessas incríveis leveduras selvagens.</i></p>
+        <p>O fermento natural é conhecido por diversos nomes: levain (fermento em francês, se pronuncia “levãn”), sourdough starter (inglês), lievito naturale ou pasta madre (italiano), masa madre (espanhol), massa lêveda (Portugal) ou massa azeda. Um pão com esse fermento leva mais tempo para ser feito, possui um aspecto rústico, uma casca crocante, um miolo cheio de alvéolos irregulares e um sabor levemente azedo e incomparável.</p>
+        <img src="/assets/img/pao/fermento-natural.jpg" alt="Fermento natural" width="device-width" height="300">
+        <p>Já falamos aqui sobre a levedura Saccharomyces cerevisiae e os tipos de fermentos biológicos industrializados. Pois o fermento natural é a mesma levedura em seu estado selvagem, combinado com lactobacilos que mantêm a acidez e evitam que outras bactérias indesejadas se desenvolvam.</p>
+        <br/>
+        <h2 class="titulo-principal">Origem do fermento natural</h2>
+        <p>A fermentação natural está longe de ser uma novidade, é um processo utilizado desde a produção dos primeiros pães. O registro mais antigo é de 3.700 AC, mas sua origem provavelmente está relacionada com o início da agricultura. Foi somente nos últimos 150 anos que o fermento industrializado foi desenvolvido e logo passou a ser amplamente empregado na produção de pães.</p>
+        <br/>
+        <h2 class="titulo-principal">Como fazer o fermento natural</h2>
+        <p>Para produzir o fermento natural temos que misturar farinha de trigo com água e deixar a natureza fazer seu trabalho de reprodução dos microrganismos. Devemos adicionar farinha e água diariamente durante 7 a 10 dias. Alguns métodos utilizam frutas (abacaxi, maçã ou uva), iogurte ou mel para potencializar a fermentação</p>
+        <br/>
+        <h2 class="titulo-principal">Benefícios do pão com fermento natural</h2>
+        <p>Caso você ainda não esteja convencido de se aventurar nesse mundo, aqui vão algumas vantagens do pão com fermento natural:</p>
+        <ul>
+          <li>Seu sabor é incomparável ao do pão tradicional;</li>
+          <li>Possui um índice glicêmico mais baixo do que outros pães;</li>
+          <li>Sua digestão é mais fácil, até mesmo para aqueles que são sensíveis ao glúten, devido a sua fermentação mais lenta;</li>
+          <li>Pode ser armazenado por mais tempo, pois o ácido acético que inibe o crescimento de bolor é produzido na fabricação de fermento;</li>
+          <li>Aumenta o teor de bactérias benéficas no intestino;</li>
+          <li>Possui uma série de nutrientes devido a complexidade de sua composição.</li>
+        </ul>
+        &copy Retirado do site www.amopaocaseiro.com.br
+        </section>
+        <br/>
+        <section>
+        <h2 class="titulo-principal">Como fazer fermentação natural</h2>
+        <iframe width="400" height="250" src="https://www.youtube.com/embed/AAAgZzZIZCA" title="Como fazer fermento natural (ou levain, sourdough starter) | Padeiro de Apartamento" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>    </section>
+        </section>
+      </article>
+    </main>
+    
       <br/>
-      <h2 class="titulo-principal">Origem do fermento natural</h2>
-      <p>A fermentação natural está longe de ser uma novidade, é um processo utilizado desde a produção dos primeiros pães. O registro mais antigo é de 3.700 AC, mas sua origem provavelmente está relacionada com o início da agricultura. Foi somente nos últimos 150 anos que o fermento industrializado foi desenvolvido e logo passou a ser amplamente empregado na produção de pães.</p>
-      <br/>
-      <h2 class="titulo-principal">Como fazer o fermento natural</h2>
-      <p>Para produzir o fermento natural temos que misturar farinha de trigo com água e deixar a natureza fazer seu trabalho de reprodução dos microrganismos. Devemos adicionar farinha e água diariamente durante 7 a 10 dias. Alguns métodos utilizam frutas (abacaxi, maçã ou uva), iogurte ou mel para potencializar a fermentação</p>
-      <br/>
-      <h2 class="titulo-principal">Benefícios do pão com fermento natural</h2>
-      <p>Caso você ainda não esteja convencido de se aventurar nesse mundo, aqui vão algumas vantagens do pão com fermento natural:</p>
-      <ul>
-        <li>Seu sabor é incomparável ao do pão tradicional;</li>
-        <li>Possui um índice glicêmico mais baixo do que outros pães;</li>
-        <li>Sua digestão é mais fácil, até mesmo para aqueles que são sensíveis ao glúten, devido a sua fermentação mais lenta;</li>
-        <li>Pode ser armazenado por mais tempo, pois o ácido acético que inibe o crescimento de bolor é produzido na fabricação de fermento;</li>
-        <li>Aumenta o teor de bactérias benéficas no intestino;</li>
-        <li>Possui uma série de nutrientes devido a complexidade de sua composição.</li>
-      </ul>
-      &copy Retirado do site www.amopaocaseiro.com.br
-    </section>
-    <br/>
-    <section>
-      <h2 class="titulo-principal">Como fazer fermentação natural</h2>
-      <iframe width="600" height="350" src="https://www.youtube.com/embed/AAAgZzZIZCA" title="Como fazer fermento natural (ou levain, sourdough starter) | Padeiro de Apartamento" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>    </section>
-      <br/>
-      <br/>
-    </aside>
 
     <!--Rodapé-->
-    <footer class="rodape">
+    <footer>
       <p>&copy;Todos os direitos reservados a Cesar Itiro Matsumoto </p>
       <p>Razão Social: Terras de Valíria. CNPJ: 11.111.111/0001-00</p>
       <p>Contato: (11) 99999-9999</p>
