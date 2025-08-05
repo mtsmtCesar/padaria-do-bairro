@@ -11,35 +11,42 @@
                 
         <title>Contato</title>
     </head>
+    
     <body>
       <header class="cabecalho-principal">
-        <p>Padaria Terras de Valíria</p>
-        <img src="/assets/img/pao/paes.jpeg" class="logo" alt="Pão é vida" width="75" height="75">
-          
+        <div class="logo-completo">
+          <div class="nome-logo">
+            <p>Padaria Terras <br> de <br/> Valíria</p>
+            <img src="/assets/img/pao/paes.jpeg" class="logo" alt="Pão é vida" width="75" height="75">
+          </div>
+        </div>
+  
         <br/>
   
-      <!--Navegando pelas páginas-->
-      <nav>
-        <ul>
-          <li class="lista-flex"><a href="/index.html">Página principal</a></li> 
-          <li class="lista-flex"><a href="/assets/cadastro.html">Cadastro</a></li>   <!--target="_blank": abre aba ao invés de criar janela--> 
-          <li class="lista-flex"><a href="/assets/contato.html">Contato</a></li>
-          <li class="lista-flex"><a href="/assets/feedback.html">Feedback</a></li>
-          <li class="lista-flex"><a href="/assets/pedidos.html">Pedidos</a></li>
-        </ul>
-      </nav>    
-      <br/>
+        <!--Navegando pelas páginas-->
+          <nav>
+            <ul>
+              <div class="navegacao-site"></div>
+              <li class="lista-flex"><a href="/index.html">Página principal</a></li> 
+              <li class="lista-flex" ><a href="/assets/cadastro.html">Cadastro</a></li>   <!--target="_blank": abre aba ao invés de criar janela--> 
+              <li class="lista-flex"><a href="/assets/contato.html">Contato</a></li>
+              <li class="lista-flex"><a href="/assets/feedback.html">Feedback</a></li>
+              <li class="lista-flex"><a href="/assets/pedidos.html">Pedidos</a></li>
+              </div>
+            </ul>
+          </nav>    
+          <br/>
       </header>
 
-        <br/>
-        <br/>
-        
-        <main>
-        <!--Entrar em contato-->
-        <article>
+      <br/>
+      <br/>
+      
+      <main>
+      <!--Entrar em contato-->
+        <article class="container">
             <h1>Entrar em contato com a Padaria</h1>
             <p>* Campos Obrigatórios</p>
-            
+
             <!--Formulário-->
             <form>
                 <!--Seleção de assunto-->
@@ -52,53 +59,45 @@
                     <option value="duvida">Dúvida</option>
                 </select>
                 </section>
-                
+
                 <br>
                 <br>
-            
+              
                 <!--Informações pessoais-->
                 <section>
                 <label for="nome">Nome Completo:*</label>
                 <input type="text" name="nome" required placeholder="Como quer ser chamado?">
-        
+                
                 <br/>
                 <br/>
-
                 <label for="email">E-mail:*</label>
                 <input type="email" name="email" required>
                 
                 <br>
                 <br>
-
                 <label for="telefone">Telefone:</label>
                 <input type="tel" name="telefone" placeholder="(99) 99999-9999" pattern="\(\d{2}\)\s\d{5}-\d{4}">            
                 </section>
-
                 <br>
                 <br>
-
                 <!--Mensagem-->
                 <section>
                 <label for="mensagem">Mensagem:*</label>
                 <br/>
                 <textarea name="mensagem" required minlength="10"></textarea>
                 </section>
-
                 <br/>
                 <br/>
-
                 <!--Botão-->
                 <section>
-                <input type="submit" value="&#128077 enviar" class="btn btn-submit">
-                <input type="button" value="&#128075 limpar" class="btn btn-limpar">
-                </section>
+                  <input type="submit" value="&#128077 enviar" class="btn btn-principal btn-submit"> 
+                  <input type="button" value="&#128075 limpar" class="btn btn-primario btn-limpar">                 </section>
             </form> 
         </article>        
-                
-        <br/>
-        <br/>
-
-        </main>
+              
+      <br/>
+      <br/>
+      </main>
         
         <!--Rodapé-->
         <footer class="rodape">

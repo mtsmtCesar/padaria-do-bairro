@@ -1,0 +1,52 @@
+      <article>
+        <h2 id="nossos-produtos" class="titulo-principal">Nossos produtos:</h2>
+          <br/>
+          <ul>
+            <h4 class="titulo-secundario">Pães</h4>
+            <ol>
+              <li>Pão Francês</li>
+              <li>Pão de leite</li>
+              <li>Pão de torresmo</li>
+              <li>Pão de ervas finas</li>
+            </ol>
+            <br/>
+            <li><h4 class="titulo-secundario">Doces</h4></li>
+              <ol>
+                <li>Bolos de diversos sabores</li>
+                <li>Sonhos</li>
+                <li>Brigadeiros</li>
+                <li>Doces amanteigados</li>
+                <li>Pavês</li>
+              </ol>
+            <br/>  
+            <li><h4 class="titulo-secundario">Bebidas quentes</h4></li>
+              <ol>
+                <li>Café</li>
+                <li>Leite</li>
+                <li>Chá</li>
+                <li>Cappuccino</li>
+                <li>Quentão</li>
+              </ol>
+            <br/>  
+            <li><h4 class="titulo-secundario">Sucos</h4></li>
+              <ol>
+                <li>Laranja</li>
+                <li>Limão</li>
+                <li>Maracujá</li>
+                <li>Acerola</li>
+                <li>Vitaminas de diversos sabores</li>
+              </ol>
+            <br/>  
+            <li><h4 class="titulo-secundario">Salgados</h4></li>
+              <ol>
+                <li>Pão de queijo</li>
+                <li>Coxinha</li>
+                <li>Enrroladinho</li>
+                <li>Pastel</li>
+                <li>Esfiha</li>
+              </ol>            
+          </ul>
+        </section>
+      <br/>
+      <br/>
+      </article>

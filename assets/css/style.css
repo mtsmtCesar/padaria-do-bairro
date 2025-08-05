@@ -9,10 +9,67 @@
     --cor-fundo: #F5EDE3;
 }
 
+/*Elementos da página*/
+.logo-completo {
+    position:fixed;
+    text-align: center;
+    gap: 10px;
+}
+
+.logo {
+    size-adjust: 30px;
+    border-radius: 100%;
+    border-color: var(--cor-secundaria);
+    border-style: dotted;
+    
+}
+
+.nome-logo {
+    font-size: 15px;
+    font-family:"Playfair", serif;;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+ }
+
+.btn {
+    border: #000000;
+    padding: 5px;
+    border-radius: 5px;
+
+    box-shadow: 0 0 10px rgba(0,0,0,0.70);   
+}
+
+.btn:hover {
+    background-color: #b0adac;
+    cursor: pointer;
+}
+
+.btn:active {
+    background-color: #2f2e2e;
+}
+
+.btn-principal {
+    background-color: #552814;
+    color: #F5EDE3;
+    gap: 15px;
+}
+
+.btn-primario {
+    background-color: var(--cor-secundaria);
+    color: var(--cor-primaria);
+}
+
+.btn-secundario {
+    background-color: var(--cor-fundo);
+    color: var(--cor-primaria);
+}
+
+/*-------------------------------------------------------------*/
 
 /*Geral*/
-body { 
-    font-family: "Playfair Display", serif;
+body {
+    font-family: 'Courier New', Courier, monospace; 
     color: #552814;
     background-color: #F5EDE3;
     font-weight: 600;
@@ -27,13 +84,24 @@ h2 {
 }
 
 footer {
-    font-size: 10;
+    padding:10px;
+    font-size: 15px;
+
     font-family: 'Times New Roman', Times, serif;
     color: #F5EDE3;
     background-color:var(--cor-primaria);
     font-style: italic;
     font-weight: 100;
 }
+
+.container {
+    margin-top: 200px;
+    max-width: 1440px;
+    margin: 10px;
+    
+    justify-content: center;
+    
+ }
 
 .container-nav {
     margin-top: 50px;
@@ -43,15 +111,19 @@ footer {
     margin-right: 50px;
 }
 
-.container {
-    max-width: 1440px;
-    margin: 0 auto;
-    justify-content: center;
- }
+
+.titulo-produtos-principais {
+    max-width: 100%;
+    font-size: 25px;
+    font-family: "Playfair Display", serif;
+    background-color: var(--cor-secundaria);
+    color: #F5EDE3;
+    text-align: center;
+}
 
 .container-produtos-promocao {
-    height: 200px;
     max-width: 100%;
+    padding:30px;
     background-color: #FFFFFF;
     display:flex;
     justify-content: center;
@@ -60,7 +132,9 @@ footer {
 }
 
 .produto {
-    
+    padding:10px;
+    width: 200px;
+    height: 210px;
     display:flex;
     flex-direction:column;
     align-items:center;
@@ -81,18 +155,24 @@ footer {
     border-radius: 50%;
 }
 
-/*Cabeçalho*/
-.logo {
-    size-adjust: 60px;
+/*Whatsapp-fixo*/
+.whats-link-fixo {
+    position: fixed;
+    right:20px;
+    bottom:30px;
+    size-adjust: 50px;
     border-radius: 100%;
-    border-color: var(--cor-secundaria);
-    border-style: dotted;
+    border-style: solid;
+    border-color:green;
+    background-color: #FFFFFF;
+    color: green; 
 }
 
+
+/*Cabeçalho*/
 .cabecalho-principal {
     width: 100%;
-    font-size: 15px;
-    font-family: "Lobster", sans-serif;
+    height: 75px;
     background-color: #552814;
     color: #F5EDE3;
     padding: 5px;
@@ -107,16 +187,9 @@ footer {
     position: fixed;
 }
 
-.nome-logo {
-    font-size: 20px;
-    display: flex;
-    align-items: center;
-    gap: 5px;
- }
-
 .cabecalho-principal ul {
     list-style-type: none;
-    margin: 0;
+    margin-left: 200px;
     padding: 0;
     display: flex;
 }
@@ -183,7 +256,7 @@ legend {
     font-weight: bolder;
 }
 
-input[type="text"] {
+input[type="text email tel"] {
     border-left: 5px solid #ccc;
   
 }
@@ -201,7 +274,6 @@ input:focus {
     box-shadow: 0 0 8px rgba(255, 140, 0, 0.5);
 }
 
-
 input:hover {
     background-color: #f1c7ab;
 }
@@ -209,22 +281,6 @@ input:hover {
 form{ 
     margin: 10px;
 }
-
-.btn {
-    background-color: #552814;
-    color: #F5EDE3;
-    }
-
-.btn:hover {
-    background-color: #f29f64;
-    cursor: pointer;
-}
-
-.btn:active {
-    background-color: #585655;
-}
-
-
 
 .btn-submit {
     font-weight: bold;
@@ -234,3 +290,13 @@ form{
     font-weight: 300;
 }
 
+
+/*importar
+
+@import url('https://fonts.googleapis.com/css2?family=Lobster&family=Open+Sans:ital,wght@0,300..80 ');
+
+@import url('variables.css');
+@import url('reset.css');
+@import url('layout.css');
+@import url('utilities.css');
+@import url('components.css');*/

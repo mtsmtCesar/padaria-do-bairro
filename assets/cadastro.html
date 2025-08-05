@@ -14,129 +14,136 @@
 <body>
     <!--Cabeçalho-->
     <header class="cabecalho-principal">
-        <p>Padaria Terras de Valíria</p>
-        <img src="/assets/img/pao/paes.jpeg" class="logo" alt="Pão é vida" width="75" height="75">
-        
+        <div class="logo-completo">
+          <div class="nome-logo">
+            <p>Padaria Terras <br/> de <br/> Valíria</p>
+            <img src="/assets/img/pao/paes.jpeg" class="logo" alt="Pão é vida" width="75" height="75">
+          </div>
+        </div>
+  
         <br/>
-        
-         <!--Navegando pelas páginas-->
-         <nav>
+  
+        <!--Navegando pelas páginas-->
+          <nav>
             <ul>
+              <div class="navegacao-site"></div>
               <li class="lista-flex"><a href="/index.html">Página principal</a></li> 
-              <li class="lista-flex"><a href="/assets/cadastro.html">Cadastro</a></li>   <!--target="_blank": abre aba ao invés de criar janela--> 
+              <li class="lista-flex" ><a href="/assets/cadastro.html">Cadastro</a></li>   <!--target="_blank": abre aba ao invés de criar janela--> 
               <li class="lista-flex"><a href="/assets/contato.html">Contato</a></li>
               <li class="lista-flex"><a href="/assets/feedback.html">Feedback</a></li>
               <li class="lista-flex"><a href="/assets/pedidos.html">Pedidos</a></li>
+              </div>
             </ul>
           </nav>    
-        <br/>
-    </header>
+          <br/>
+      </header>
         
     <br/>
     <br/>
     
     <main>
     <!--Cadastro/Newsletter-->
-    <article>    
-        <h1>Cadastro/Newsletter</h1>
-        <p>* Campos obrigatórios</p>
-
-        <br/>
-    
-        <!--Formulário-->
-        <form>
-            <!--Dados pessoais-->
-            <fieldset>
-                <legend>Dados Pessoais</legend>
-                <label for="nome">Nome completo:*</label>
-                <input type="text" id="nome" name="nome" required placeholder="Como quer ser chamado?">
-
-                <br/>
-                <br/>
-
-                <label for="email">E-mail:*</label>
-                <input type="email" id="email" name="email" required>
-
-                <br/>
-                <br/>
-
-                <label for="telefone">Telefone:*</label>
-                <input type="tel" id="telefone" name="telefone" required pattern="\(\d{2}\)\d{5}-\d{4}" placeholder="(99) 99999-9999">
-
-                <br/>
-                <br/>
-
-                <label for="nascimento">Data de nascimento:</label>
-                <input type="date" id="nascimento" name="nascimento">
-            </fieldset>
+        <div class="container">
+            <article>    
+            <h1>Cadastro/Newsletter</h1>
+            <p>* Campos obrigatórios</p>
 
             <br/>
-            <br/>
-
-            <!--Endereço-->
-            <fieldset>
-                <legend>Endereço:*</legend>
-                <label for="rua">Rua:</label>
-                <input type="text" id="rua" name="rua" required>
-
-                <label>Número:*</label>
-                <input type="number" id="numero" name="numero" required>
-
-                <br/>
-                <br/>
-
-                <label>Bairro:*</label>
-                <input type="text" id="bairro" name="bairro" required>
-          
-                <br/>
-                <br/>
-          
-                <label for="cep">CEP:*</label>
-                <input type="number" id="cep" name="cep" required pattern="\d{5}-\d{3}"">
-            </fieldset>
-
-            <br/>
-            <br/>   
-
-            <!--Preferências-->
-            <fieldset>
-            <legend>Preferências:</legend>
-            <label for="favoritos">Tipos de produtos favoritos:</label>
-            <br/>
-            <input type="checkbox" id="favoritos" name="favoritos" value="bolos">Bolos
-            <input type="checkbox" id="favoritos2" name="favoritos2" value="doces">Doces
-            <input type="checkbox" id="favoritos3" name="favoritos3" value="sucos">Sucos
-            <input type="checkbox" id="favoritos4" name="favoritos4" value="salgados">Salgados
-            <input type="checkbox" id="favoritos5" name="favoritos5" value="bebidas">Bebidas
-            <input type="checkbox" id="favoritos6" name="favoritos6" value="paes">Pães    
-            </fieldset>
-
-            <br/>
-            <br/>
-
-            <!--Termos-->
-            <fieldset>
-                <legend>Termos</legend>
-                <label for="termos">Aceita receber promoções por e-mail?</label>
-                <input type="checkbox" id="termos" name="termos" required>
-            </fieldset>
-
-            <br/>
-            <br/>
-
-            <!--Botão-->
-            <section>
-            <input type="submit" value="&#128077 enviar" class="btn btn-submit"> 
-            <input type="button" value="&#128075 limpar" class="btn btn-limpar"> 
-   
-            </section>
- 
-
-        </form>
-    </article> 
-
+            
+                <!--Formulário-->
+                <form>
+                    <!--Dados pessoais-->
+                    <fieldset>
+                        <legend>Dados Pessoais</legend>
+                        <label for="nome">Nome completo:*</label>
+                        <input type="text" id="nome" name="nome" required placeholder="Como quer ser chamado?">
+                    
+                        <br/>
+                        <br/>
+                    
+                        <label for="email">E-mail:*</label>
+                        <input type="email" id="email" name="email" required>
+                    
+                        <br/>
+                        <br/>
+                    
+                        <label for="telefone">Telefone:*</label>
+                        <input type="tel" id="telefone" name="telefone" required pattern="\(\d{2}\)\d{5}-\d{4}" placeholder="(99) 99999-9999">
+                    
+                        <br/>
+                        <br/>
+                    
+                        <label for="nascimento">Data de nascimento:</label>
+                        <input type="date" id="nascimento" name="nascimento">
+                    </fieldset>
+                
+                    <br/>
+                    <br/>
+                
+                    <!--Endereço-->
+                    <fieldset>
+                        <legend>Endereço:*</legend>
+                        <label for="rua">Rua:</label>
+                        <input type="text" id="rua" name="rua" required>
+                    
+                        <label>Número:*</label>
+                        <input type="number" id="numero" name="numero" required>
+                    
+                        <br/>
+                        <br/>
+                    
+                        <label>Bairro:*</label>
+                        <input type="text" id="bairro" name="bairro" required>
+                    
+                        <br/>
+                        <br/>
+                    
+                        <label for="cep">CEP:*</label>
+                        <input type="number" id="cep" name="cep" required pattern="\d{5}-\d{3}"">
+                    </fieldset>
+                
+                    <br/>
+                    <br/>   
+                
+                    <!--Preferências-->
+                    <fieldset>
+                    <legend>Preferências:</legend>
+                    <label for="favoritos">Tipos de produtos favoritos:</label>
+                    <br/>
+                    <input type="checkbox" id="favoritos" name="favoritos" value="bolos">Bolos
+                    <input type="checkbox" id="favoritos2" name="favoritos2" value="doces">Doces
+                    <input type="checkbox" id="favoritos3" name="favoritos3" value="sucos">Sucos
+                    <input type="checkbox" id="favoritos4" name="favoritos4" value="salgados">Salgados
+                    <input type="checkbox" id="favoritos5" name="favoritos5" value="bebidas">Bebidas
+                    <input type="checkbox" id="favoritos6" name="favoritos6" value="paes">Pães    
+                    </fieldset>
+                
+                    <br/>
+                    <br/>
+                
+                    <!--Termos-->
+                    <fieldset>
+                        <legend>Termos</legend>
+                        <label for="termos">Aceita receber promoções por e-mail?</label>
+                        <input type="checkbox" id="termos" name="termos" required>
+                    </fieldset>
+                
+                    <br/>
+                    <br/>
+                
+                    <!--Botão-->
+                    <section>
+                    <input type="submit" value="&#128077 enviar" class="btn btn-principal btn-submit"> 
+                    <input type="button" value="&#128075 limpar" class="btn btn-primario btn-limpar"> 
+                    
+                    </section>
+                
+                
+                </form>
+            </article> 
+        </div>
     </main>
-    
+
     <br>
     <br>
 
