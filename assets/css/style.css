@@ -175,10 +175,17 @@ footer {
     height: 75px;
     background-color: #552814;
     color: #F5EDE3;
-    padding: 5px;
-    display: flex;
+    padding: 10px;
+    display: grid;
+    grid-template-columns: 1fr 5fr 2fr;
+    grid-template-rows: 1fr;
+    grid-gap: 10px;
     justify-content: space-between;
     overflow:hidden;
+    align-content:center;
+    justify-content:center;
+    align-items:center;
+    justify-items: center;
     top:0;
     left:0;
     right:0;
@@ -208,6 +215,18 @@ footer {
     color:#918885;
     box-shadow: (0 0 10px rgba(0 0 0 0.38));
 }
+
+.botoes-login {
+    display:flex;
+    gap:10px;
+    font-weight: bold;
+    align-items: center;
+    align-content: center;
+    justify-items: center;
+    justify-content: center;
+}
+
+
 
 .nav-dx a {
     font-size: 15;
