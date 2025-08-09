@@ -179,7 +179,7 @@ footer {
     display: grid;
     grid-template-columns: 1fr 5fr 2fr;
     grid-template-rows: 1fr;
-    grid-gap: 10px;
+    grid-gap: 10px; /*não existe tal comando*/
     justify-content: space-between;
     overflow:hidden;
     align-content:center;

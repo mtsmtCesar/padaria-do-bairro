@@ -1,0 +1,303 @@
+<!DOCTYPE>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Padaria Terras de Valíria.">
+  <meta name="keywords" content="pão, suco, caseiro, comida, janta, almoço, café, natural">
+  <meta name="robots" contents="index, follow">
+  <link rel="stylesheet" href="/assets/css/style.css"> <!--Liga a css-->  
+    
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Lobster&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Playfair:ital,opsz,wght@0,5..1200,300..900;1,5..1200,300..900&display=swap" rel="stylesheet">
+  
+  <link rel='stylesheet' href='https://cdn-uicons.flaticon.com/3.0.0/uicons-solid-rounded/css/uicons-solid-rounded.css'>
+  
+  <title>Padaria Terras de Valíria</title>
+</head>
+  
+<body>
+  <!--Cabeçalho-->
+  <header class="cabecalho-principal">
+      <div class="logo-completo">
+        <div class="nome-logo">
+          <p>Padaria Terras <br> de <br/> Valíria</p>
+          <img src="/assets/img/pao/paes.jpeg" class="logo" alt="Pão é vida" width="70" height="70">
+        </div>
+      </div>
+
+      <br/>
+
+      <!--Navegando pelas páginas-->
+      <nav>
+         <ul>
+          <div class="navegacao-site"></div>
+            <li class="lista-flex"><a href="/index.html">Página principal</a></li> 
+            <li class="lista-flex" ><a href="/assets/cadastro.html">Cadastro</a></li>   <!--target="_blank": abre aba ao invés de criar janela--> 
+            <li class="lista-flex"><a href="/assets/contato.html">Contato</a></li>
+            <li class="lista-flex"><a href="/assets/feedback.html">Feedback</a></li>
+            <li class="lista-flex"><a href="/assets/pedidos.html">Pedidos</a></li>
+          </div>
+          </ul>
+        </nav>    
+        
+        <br/>
+
+        <div class="botoes-login">
+          <div class="criar-conta">
+            <input type="button" value="Criar conta" class="btn btn-primario">
+            <input type="button" value="Login" class="btn btn-secundario">
+          </div>
+
+        </div>
+
+  </header>        
+  
+
+  
+  <br/>
+  <br/>
+  
+  <!-- Conteúdo principal -->
+  <main>
+    <!--Whats-link-->
+    <div class="whats-link-fixo">
+      <a href="https://api.whatsapp.com/send?phone=5511999999999&text=Ol%C3">
+        <i class="fi fi-sr-phone-call" width="50" height="50"></i>
+      </a>
+    </div>
+
+ 
+  
+  
+    <div class="container-nav">
+        <!--Navegação pela página-->
+        <nav class="nav-dx">
+          <h2>Navegação:</h2>
+          <ul>
+            <li><a href="#quem-somos">Quem somos</a></li>
+            <li><a href="#nossos-produtos" >Nossos produtos</a></li>
+            <li><a href="/assets/cardapio.html" >Cardápio</a></li>
+            <li><a href="#localização-e-horários">Localização e horários</a></li>
+            <li><a href="/assets/curiosidade.html">Curiosidade</a></li>
+          </ul>
+        </nav>
+  
+        <!--Vídeo institucional-->
+        <section>
+          <video width=430 height=320 controls width="720" class="video-institucional">
+            <source src="/assets/video/video-institucional-padaria.mp4" type="video/mp4">
+            <p>Seu navegador não suporta vídeos</p>
+            </video>
+          </video>
+        </section>
+    </div>
+
+    <br/>
+    <br/>
+    
+    <div class="container">
+      <!--Quem somos-->
+      <article>
+        <h2 id="quem-somos" class="titulo-principal">Quem somos:</h2>
+        <br/>
+        <!--Nossa missão-->
+        <section>
+          <h3 class="titulo-secundario">Nossa missão:</h3>
+          <p>Tradição e satisfazendo o paladar das pessoas desde 1980.</p>
+        <br/>
+        </section>
+        <!--Nossa visão-->
+        <section>
+          <h3 class="titulo-secundario"> Nossa visão:</h3>
+          <p>Levar e continuar a cultura da panificação ao paladar dos brasileiros</p>
+        </section>
+        <br/>
+        <!--Nosso diferencial-->
+        <section>
+          <h3 class="titulo-secundario">Diferenciais:</h3>
+          <p>Nossas massas são feitas com fermentação natural e a qualidade garantida de mais de 100 anos de suceesso.</p>
+          <p>Oferecemos serviços para aqueles que não tem tempo de cuidar de sua alimentação.</p>
+        </section>
+        <br>
+        <br>
+      </article>
+    </div>
+
+    <!--Nossos produtos principais-->
+    <div class="container">
+      <div class="titulo-produtos-principais">
+        <strong>Nossos produtos principais</strong>
+      </div>
+      
+      <div class="container-produtos-promocao">
+        <!--Produto 1-->
+        <div class="produto">  
+          <img src="/assets/img/pao/pao-frances.jpg" alt="Pão francês">
+          <div class="descricao-produto">
+            <strong>Pão Francês</strong>
+            <p>Massa quentinha e crocante.</p>
+          </div>
+        </div>
+        <!--Produto 2-->
+        <div class="produto">  
+          <img src="/assets/img/pao/pao-frances.jpg" alt="Pão francês">
+          <div class="descricao-produto">
+            <strong>Pão Francês</strong>
+            <p>Massa quentinha e crocante.</p>
+          </div>
+        </div>
+        <!--Produto 3-->
+        <div class="produto">  
+          <img src="/assets/img/pao/pao-frances.jpg" alt="Pão francês">
+          <div class="descricao-produto">
+            <strong>Pão Francês</strong>
+            <p>Massa quentinha e crocante.</p>
+          </div>
+        </div>
+        <!--Produto 4-->
+        <div class="produto">  
+          <img src="/assets/img/pao/pao-frances.jpg" alt="Pão francês">
+          <div class="descricao-produto">
+            <strong>Pão Francês</strong>
+            Massa quentinha e crocante.
+          </div>
+        </div>
+      </div>
+      <div class="container-produtos-promocao">
+        <!--Produto 5-->
+        <div class="produto">  
+          <img src="/assets/img/pao/pao-frances.jpg" alt="Pão francês">
+          <div class="descricao-produto">
+            <strong>Pão Francês</strong>
+            <p>Massa quentinha e crocante.</p>
+          </div>
+        </div>
+        <!--Produto 6-->
+        <div class="produto">  
+          <img src="/assets/img/pao/pao-frances.jpg" alt="Pão francês">
+          <div class="descricao-produto">
+            <strong>Pão Francês</strong>
+            <p>Massa quentinha e crocante.</p>
+          </div>
+        </div>
+        <!--Produto 7-->
+        <div class="produto">  
+          <img src="/assets/img/pao/pao-frances.jpg" alt="Pão francês">
+          <div class="descricao-produto">
+            <strong>Pão Francês</strong>
+            <p>Massa quentinha e crocante.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    
+    <br/>
+    <br/>
+
+    <!-- Localização e horários -->
+    <article class="container">
+      <h2 id="localização-e-horários" class="titulo-principal">Localização e horários:</h2>
+        <br/>  
+        <!--Endereço-->
+        <section>
+          <ul>  
+            <li><address>Estamos na Rua dos Dragões, 666 - Bairro Terra dos Homens Livres, São Paulo - SP. 12345-123</address></li>
+          </ul>
+        </section>  
+      
+        <br/>  
+      <!--Horários-->
+        <section>
+          <table border="1">
+            <thead>
+              <tr>
+                <th>Dias</th>
+                <th>Horários</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>Segunda a Sexta feiras</td>
+                <td>5 - 22 hrs</td>
+              </tr>
+              <tr>
+                <td>Sábado</td>
+                <td>8 - 22 hrs</td>
+              </tr>
+              <tr>
+                <td>Domingo e feriados</td>
+                <td>8 - 22 hrs</td>
+              </tr>
+              <tr>
+                <td>Oferecemos almoço todos os dias</td>
+                <td>11 - 16 hrs</td>
+              </tr>
+              <tr>
+                <td>Oferecemos jantar todos os dias</td>
+                <td>19 - 22 hrs</td>
+              </tr>
+              <tr>
+                <td>Entregas a domicílio ou aplicativo</td>
+                <td>10 - 22 hrs</td>
+              </tr>
+            </tbody>
+          </table>
+        
+          <br/>
+          <p>Fazemos entrega a domicílio e atendemos pelo Ifood</p>
+        </section>
+    </article>  
+      <br/>
+      <br/>
+  
+    <div class="container">
+      <!--Curiosidade-->
+      <article>
+        <section> 
+        <h2 id=curiosidade class="titulo-principal">O que é fermento natural e qual sua vantagem sobre o industrializado</h2>
+        <p><i>Quando você começa a fazer pão caseiro, em algum momento vai se deparar com o fermento natural. Conheça o poder dessas incríveis leveduras selvagens.</i></p>
+        <p>O fermento natural é conhecido por diversos nomes: levain (fermento em francês, se pronuncia “levãn”), sourdough starter (inglês), lievito naturale ou pasta madre (italiano), masa madre (espanhol), massa lêveda (Portugal) ou massa azeda. Um pão com esse fermento leva mais tempo para ser feito, possui um aspecto rústico, uma casca crocante, um miolo cheio de alvéolos irregulares e um sabor levemente azedo e incomparável.</p>
+        <img src="/assets/img/pao/fermento-natural.jpg" alt="Fermento natural" width="device-width" height="300">
+        <p>Já falamos aqui sobre a levedura Saccharomyces cerevisiae e os tipos de fermentos biológicos industrializados. Pois o fermento natural é a mesma levedura em seu estado selvagem, combinado com lactobacilos que mantêm a acidez e evitam que outras bactérias indesejadas se desenvolvam.</p>
+        <br/>
+        <h2 class="titulo-principal">Origem do fermento natural</h2>
+        <p>A fermentação natural está longe de ser uma novidade, é um processo utilizado desde a produção dos primeiros pães. O registro mais antigo é de 3.700 AC, mas sua origem provavelmente está relacionada com o início da agricultura. Foi somente nos últimos 150 anos que o fermento industrializado foi desenvolvido e logo passou a ser amplamente empregado na produção de pães.</p>
+        <br/>
+        <h2 class="titulo-principal">Como fazer o fermento natural</h2>
+        <p>Para produzir o fermento natural temos que misturar farinha de trigo com água e deixar a natureza fazer seu trabalho de reprodução dos microrganismos. Devemos adicionar farinha e água diariamente durante 7 a 10 dias. Alguns métodos utilizam frutas (abacaxi, maçã ou uva), iogurte ou mel para potencializar a fermentação</p>
+        <br/>
+        <h2 class="titulo-principal">Benefícios do pão com fermento natural</h2>
+        <p>Caso você ainda não esteja convencido de se aventurar nesse mundo, aqui vão algumas vantagens do pão com fermento natural:</p>
+        <ul>
+          <li>Seu sabor é incomparável ao do pão tradicional;</li>
+          <li>Possui um índice glicêmico mais baixo do que outros pães;</li>
+          <li>Sua digestão é mais fácil, até mesmo para aqueles que são sensíveis ao glúten, devido a sua fermentação mais lenta;</li>
+          <li>Pode ser armazenado por mais tempo, pois o ácido acético que inibe o crescimento de bolor é produzido na fabricação de fermento;</li>
+          <li>Aumenta o teor de bactérias benéficas no intestino;</li>
+          <li>Possui uma série de nutrientes devido a complexidade de sua composição.</li>
+        </ul>
+        &copy Retirado do site www.amopaocaseiro.com.br
+        </section>
+        <br/>
+        <section>
+        <h2 class="titulo-principal">Como fazer fermentação natural</h2>
+        <br>
+        <iframe width="400" height="250" src="https://www.youtube.com/embed/AAAgZzZIZCA" title="Como fazer fermento natural (ou levain, sourdough starter) | Padeiro de Apartamento" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>    </section>
+        </section>
+      </article>
+    </div>
+  </main>
+  
+    <br/>
+  <!--Rodapé-->
+  <footer>
+    <p>&copy;Todos os direitos reservados a Cesar Itiro Matsumoto </p>
+    <p>Razão Social: Terras de Valíria. CNPJ: 11.111.111/0001-00</p>
+    <p>Contato: (11) 99999-9999</p>
+  </footer>
+  
+</body>
+</html>
+
