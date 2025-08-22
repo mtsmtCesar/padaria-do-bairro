@@ -6,3 +6,8 @@
     padding:0;
 }
 
+:root {
+    --cor-primaria: #552814;
+    --cor-secundaria:  #BB793E;
+    --cor-fundo: #F5EDE3;
+}
